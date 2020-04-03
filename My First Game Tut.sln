@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My First Game Tut", "My First Game Tut.csproj", "{E7EACCDA-BDED-4561-9E50-0A5DBBFA89FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	Release|Any CPU = Release|Any CPU
+	Tools|Any CPU = Tools|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7EACCDA-BDED-4561-9E50-0A5DBBFA89FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7EACCDA-BDED-4561-9E50-0A5DBBFA89FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7EACCDA-BDED-4561-9E50-0A5DBBFA89FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7EACCDA-BDED-4561-9E50-0A5DBBFA89FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7EACCDA-BDED-4561-9E50-0A5DBBFA89FC}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
+		{E7EACCDA-BDED-4561-9E50-0A5DBBFA89FC}.Tools|Any CPU.Build.0 = Tools|Any CPU
+	EndGlobalSection
+EndGlobal
