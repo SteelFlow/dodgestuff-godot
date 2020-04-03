@@ -12,10 +12,19 @@ public class Player : Area2D
 
     private Vector2 _screenSize;
 
+    private Vector2 _target;
     public override void _Ready()
     {
         _screenSize = GetViewport().Size;
         Hide();
+    }
+
+    public override void _Input(InputEvent @event)
+    {
+        if (@event is InputEventScreenTouch eventMouseButton && eventMouseButton.Pressed)
+        {
+            _target = (@event as InputEventScreenTouch).Position;
+        }
     }
 
     public override void _Process(float delta)
@@ -73,6 +82,16 @@ public class Player : Area2D
     {
         var velocity = new Vector2();
 
+        if (Position.DistanceTo(_target) > 10)
+        {
+            velocity = (_target - Position).Normalized() * Speed;
+        }
+        else
+        {
+            velocity = new Vector2();
+        }
+
+        
         if (Input.IsActionPressed(InputKeys.Right))
             velocity.x += 1;
         if (Input.IsActionPressed(InputKeys.Left))
